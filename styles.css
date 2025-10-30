@@ -1,0 +1,15 @@
+:root{
+  --bg:#f9f9fb; --accent:#2b7ae4; --text:#1f1f1f;
+  --container: 1000px;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Arial,sans-serif;color:var(--text);background:var(--bg);margin:0;line-height:1.5}
+.container{max-width:var(--container);margin:0 auto;padding:24px}
+.site-header{background:white;padding:32px 0;border-bottom:1px solid #eee}
+.site-header h1{margin:0;font-size:28px}
+.subtitle{color:#555;margin-top:6px}
+.contact a{color:var(--accent);text-decoration:none}
+main{padding:24px 0}
+h2{margin-top:0}
+.project{background:white;padding:16px;border-radius:8px;margin-bottom:12px;border:1px solid #eee}
+.site-footer{padding:20px 0;text-align:center;color:#777}
