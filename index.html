@@ -3,64 +3,117 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Nurzada — Frontend & UX Portfolio</title>
+  <title>Nurzada Zhakyp — Frontend & UX Portfolio</title>
+  <meta name="description" content="Nurzada — Frontend & UX. Projekte: The Oater, Touchscreen UI, KIDICAP App, Kunden-Websites. Portfolio, Kontakt, Skills."/>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1>Nurzada Zhakyp</h1>
-      <p class="subtitle">Frontend & UX – HTML · CSS · JavaScript · UX/UI</p>
-      <p class="contact">E-Mail: <a href="mailto:your.email@example.com">your.email@example.com</a> · <a href="https://github.com/yourusername" target="_blank">GitHub</a> · <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></p>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="header">
+    <div class="wrap">
+      <div class="brand">
+        <h1>Nurzada Zhakyp</h1>
+        <p class="tag">Frontend & UX • HTML · CSS · JavaScript · UX/UI</p>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section id="about">
-      <h2>О себе / About</h2>
-      <p>Я — фронтенд-разработчик и UX-дизайнер с практическим опытом и реальными проектами. Интересуюсь пользовательским опытом, адаптивной версткой и чистым кодом.</p>
+  <main id="main" class="wrap">
+    <section class="hero">
+      <div class="hero-left">
+        <h2>Frontend & UX Developer</h2>
+        <p>Ich baue intuitive Interfaces und sauberen, wartbaren Frontend-Code. Fokus: Responsive UI, Prototyping, UX-Design & Frontend-Implementierung.</p>
+        <p class="cta">
+          <a class="btn" href="#projects">Meine Projekte ansehen</a>
+          <a class="btn ghost" href="mailto:your.email@example.com">Kontakt</a>
+        </p>
+        <p class="meta">Location: Mainz · Open for Junior Frontend / UX positions</p>
+      </div>
+      <div class="hero-right">
+        <div class="profile-card">
+          <img alt="Nurzada Zhakyp" src="https://via.placeholder.com/260x260.png?text=Portrait" />
+          <ul class="contact-list">
+            <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+            <li>GitHub: <a href="https://github.com/Nzhakypk" target="_blank">Nzhakypk</a></li>
+            <li>LinkedIn: <a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <section id="projects">
-      <h2>Проекты / Projects</h2>
-
-      <article class="project">
-        <h3>Project Title 1</h3>
-        <p>Краткое описание кейса: задача, мой вклад, технологии.</p>
-        <p>
-          <a href="projects/project1/index.html" target="_blank">Live demo</a> ·
-          <a href="https://github.com/yourusername/project1" target="_blank">Code</a>
-        </p>
-      </article>
-
-      <article class="project">
-        <h3>Project Title 2</h3>
-        <p>Краткое описание второго проекта — UX-процесс, prototyping, frontend.</p>
-        <p>
-          <a href="projects/project2/index.html" target="_blank">Live demo</a> ·
-          <a href="https://github.com/yourusername/project2" target="_blank">Code</a>
-        </p>
-      </article>
-
-      <!-- Добавь свои проекты аналогично -->
+    <section id="about" class="card">
+      <h2>About / О себе</h2>
+      <p>Ich habe Erfahrung in Frontend-Entwicklung und UX-Design (HTML, CSS, JavaScript, Prototyping in Figma). Während meines Dualen Studiums und in Startups habe ich Projekte umgesetzt: Web-Interfaces, Touchscreen-UIs und Organisations-Apps. Ich suche aktuell eine Junior Frontend / UX Rolle.</p>
     </section>
 
-    <section id="skills">
-      <h2>Навыки / Skills</h2>
-      <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>UX/UI, Figma, прототипирование</li>
-        <li>Адаптивная верстка, cross-browser</li>
-        <li>Git, GitHub</li>
-      </ul>
+    <section id="projects" class="card">
+      <h2>Projects / Projekte</h2>
+      <div id="projects-grid" class="grid">
+        <!-- Project cards injected by JS -->
+      </div>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div>
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML5, semantic markup</li>
+            <li>CSS3 — Flexbox, Grid, BEM</li>
+            <li>Vanilla JS (ES6+), DOM, fetch</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Design & Tools</h3>
+          <ul>
+            <li>UX/UI, Prototyping — Figma</li>
+            <li>Responsive & accessible design</li>
+            <li>Git, GitHub, basics of CI/CD</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Extras</h3>
+          <ul>
+            <li>Basic Node.js tooling</li>
+            <li>Testing mindset & clean code (OOP)</li>
+            <li>Deutsch / English / Русский</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>Ich freue mich auf Austausch — schreibe mir gern eine E-Mail oder verbinde dich auf LinkedIn.</p>
+      <p><a class="btn" href="mailto:your.email@example.com">E-Mail schreiben</a></p>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© Nurzada — Frontend & UX</p>
+  <footer class="footer">
+    <div class="wrap">
+      <small>© Nurzada Zhakyp — Frontend & UX • <a href="https://github.com/Nzhakypk" target="_blank">GitHub</a></small>
     </div>
   </footer>
+
+  <!-- Modal template -->
+  <div id="project-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal-inner" role="document">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <h3 id="modal-title"></h3>
+      <p class="modal-lead"></p>
+      <div class="modal-meta"></div>
+      <div class="modal-links"></div>
+      <div class="modal-preview"></div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
